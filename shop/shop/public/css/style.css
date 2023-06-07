@@ -1,0 +1,85 @@
+.tab {
+  display: flex;
+}
+
+.tab button {
+  background-color: #f2f2f2;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  flex: 1;
+  text-align: center;
+}
+
+.tab button.active {
+  background-color: #ddd;
+}
+
+.menu-item {
+  margin-bottom: 20px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  background-color: #f2f2f2;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  margin: 0 5px;
+}
+
+.pagination button.active {
+  background-color: #ddd;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.menu-item img {
+  width: 150px; /* 이미지 너비 조정 */
+  height: 150px; /* 이미지 높이 조정 */
+  margin-right: 10px;
+}
+
+.menu-item span {
+  font-size: 24px; /* 텍스트 크기 조정 */
+}
+
+.image-container {
+  position: relative;
+}
+
+.button-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  /* 버튼 위치 및 스타일 조정 */
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.button-container {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-90%);
+  display: none;
+}
+
+.menu-item:hover .button-container {
+  display: block;
+}

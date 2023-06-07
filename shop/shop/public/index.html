@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>피자 메뉴</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <div class="tab">
+      <button class="tablinks" onclick="openTab(event, 'all')" id="defaultTab">
+        전체
+      </button>
+      <button class="tablinks" onclick="openTab(event, 'craftsmanship')">
+        장인피자
+      </button>
+      <button class="tablinks" onclick="openTab(event, 'expert')">
+        달인피자
+      </button>
+      <button class="tablinks" onclick="openTab(event, 'luxury')">
+        명품피자
+      </button>
+    </div>
+
+    <div id="all" class="tabcontent">
+      <h3>전체 메뉴</h3>
+      <div id="allMenuItems" class="menu-container"></div>
+      <div id="allPagination" class="pagination-container"></div>
+      <button id="popularBtn">신제품순(가나다순정렬)</button>
+      <button id="priceIncreaseBtn">가격높은순</button>
+      <button id="priceDecreaseBtn">가격낮은순</button>
+    </div>
+
+    <div id="craftsmanship" class="tabcontent">
+      <h3>장인피자</h3>
+      <div id="craftsmanshipMenuItems" class="menu-container"></div>
+      <div id="craftsmanshipPagination" class="pagination-container"></div>
+    </div>
+
+    <div id="expert" class="tabcontent">
+      <h3>달인피자</h3>
+      <div id="expertMenuItems" class="menu-container"></div>
+      <div id="expertPagination" class="pagination-container"></div>
+    </div>
+
+    <div id="luxury" class="tabcontent">
+      <h3>명품피자</h3>
+      <div id="luxuryMenuItems" class="menu-container"></div>
+      <div id="luxuryPagination" class="pagination-container"></div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
