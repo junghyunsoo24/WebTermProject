@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  font-family: Noto Sans CJK KR Bold;
+}
+
+.review_container {
+  width: 1200px;
+  padding: 20px;
+}
+
+.review_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: larger;
+  font-weight: 550;
+  height: 50px;
+  background-color: #41b6e6;
+  border-bottom: 3px black solid;
+}
+
+.review_header > div {
+  text-align: center;
+}
+
+.review_card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px black solid;
+  height: 50px;
+}
+
+.review_card > div {
+  text-align: center;
+}
+
+.rating {
+  width: 20%;
+}
+
+.contents {
+  width: 60%;
+}
+
+.writer {
+  width: 20%;
+}
