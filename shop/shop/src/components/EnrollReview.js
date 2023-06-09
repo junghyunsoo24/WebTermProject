@@ -1,5 +1,5 @@
-import {Fragment, useState, useEffect} from "react";
-import {arrayContentsToString, makeHttpRequest} from "./util";
+import {Fragment, useState} from "react";
+import {makeHttpRequest} from "./util";
 
 async function enrollReview(userId, pizzaId, rating, contents) {
     const review = {   
@@ -22,6 +22,7 @@ function OrderHistory(props) {
         makeHtml(props, starRating, setStarRating, index, setIndex, review, setReview)
     );
   }
+
 function makeHtml(props, starRating, setStarRating, index, setIndex, review, setReview) {
     return (<Fragment>
             <div className="enter-review">
@@ -67,4 +68,4 @@ function makeHtml(props, starRating, setStarRating, index, setIndex, review, set
         </div>
     </Fragment>);
 }
-  export default OrderHistory;
+export default OrderHistory;
