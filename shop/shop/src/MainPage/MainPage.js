@@ -7,7 +7,6 @@ function MainPage()
 {
     return (
         <div>
-            
             <MainHeader />
             <MainBody></MainBody>
             <MainFoot/>
