@@ -1,0 +1,47 @@
+.btn-red-order{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.inner-div{
+    width: 80%;
+    height: 90px;
+    background-color: red;
+    color: white;
+    padding: 20px;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}
+
+.inner-div:before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 80%;
+  background-color: white;
+  left: -1px;
+  top: 10%;
+}
+
+.inner-div:nth-child(2):before {
+  left: auto;
+  right: -1px;
+}
+
+
+.btn-box-text{
+    font-size: 1.4rem;
+}
+
+.btn-delivery-icon, .btn-box-icon{
+    width : 100px;
+    height: auto;
+}

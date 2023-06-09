@@ -1,0 +1,92 @@
+.main_top {
+    background-color: #41b6e6;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    font-size : 1.5rem;
+    font-weight: bold;
+}
+.top_left {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    vertical-align: middle;
+}
+.top_left img{
+    height: 100%;
+}
+.top_middle {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+.top_middle span {
+    margin: 0;
+}
+.top_right {
+    text-align: right;
+    color : black;
+    display: flex;
+    align-items: center;
+}
+.top_right img{
+    height: 100%;
+}
+.top_right_text span {
+    margin-right: 10px;
+    align-items: center;
+}
+/* 위에는 상위 목록 , 아래에는 햄버거 클릭시 나오는 내용*/
+
+.web-main-tab-collapse{
+    background-color:#41b6e6;
+    color:white;
+    font-size : 1.2rem;
+    padding-left: 30px;
+}
+
+.web-collapse-tab-top {
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.collapse-tab-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.tab-item:first-child {
+    color : black;
+    font-size : 1.4rem;
+    font-weight: bold;
+}
+
+.tab-item {
+    display: flex;
+    align-items: center;
+}
+
+.web-collapse-tab-middle {
+    display: flex;
+    align-items: center;
+}
+
+.tab-middle-item {
+    position: relative;
+    margin-right: 10px;
+}
+
+.tab-middle-item::after {
+    content: " > ";
+    position: absolute;
+    right: -8px;
+    color: white;
+}
+
+.x-button {
+    margin-left: auto;
+}
